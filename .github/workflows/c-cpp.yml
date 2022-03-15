@@ -18,5 +18,6 @@ jobs:
       - run: gcc --version
       - run: gcc main.c -o main.exe    
       - run: ls ${{ github.workspace }}
+      - run: file main.exe
       - run: ./main.exe
       - run: echo "🍏 This job's status is ${{ job.status }}."
