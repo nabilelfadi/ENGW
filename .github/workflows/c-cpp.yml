@@ -17,4 +17,5 @@ jobs:
       - run: echo "🖥️ Build file."
       - run: gcc main.c       
       - run: ls ${{ github.workspace }}
+      - run: ./a.out
       - run: echo "🍏 This job's status is ${{ job.status }}."
